@@ -1,19 +1,25 @@
 1. Create a local folder:
 
 mkdir ~/ReceiptProcessor
+
 cd ~/ReceiptProcessor
 
 2. Pull the codes
+
 git init
+
 git clone https://github.com/yanghybrid/Receipt-Processor.git
 
 
 3. Run codes
+
 go run main.go
 
 
 4.Test the App 
+
 4.1. POST /receipts/process
+
 Using curl:
 
 curl -X POST http://localhost:8080/receipts/process \
@@ -29,9 +35,12 @@ curl -X POST http://localhost:8080/receipts/process \
     "total": "18.74"
 }'
 
-📌 Expected response:
+Expected response:
+
 {"id": "some-uuid"}
 
 4.2. GET /receipts/{id}/points
+
 Replace <id> with the actual UUID you got from the previous call:
+
 curl http://localhost:8080/receipts/<id>/points
