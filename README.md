@@ -22,18 +22,7 @@ go run main.go
 
 Using curl:
 
-curl -X POST http://localhost:8080/receipts/process \
-  -H "Content-Type: application/json" \
-  -d '{
-    "retailer": "Target",
-    "purchaseDate": "2022-01-01",
-    "purchaseTime": "13:01",
-    "items": [
-      { "shortDescription": "Mountain Dew 12PK", "price": "6.49" },
-      { "shortDescription": "Emils Cheese Pizza", "price": "12.25" }
-    ],
-    "total": "18.74"
-}'
+curl -X POST http://localhost:8080/receipts/process -H "Content-Type: application/json" -d '{ "retailer": "Target", "purchaseDate": "2022-01-01", "purchaseTime": "13:01", "items": [ { "shortDescription": "Mountain Dew 12PK", "price": "6.49" }, { "shortDescription": "Emils Cheese Pizza", "price": "12.25" } ], "total": "18.74" }'
 
 Expected response:
 
