@@ -32,4 +32,4 @@ Expected response:
 
 Replace <id> with the actual UUID you got from the previous call:
 
-curl http://localhost:8080/receipts/<id>/points
+curl http://localhost:8080/receipts/{id}/points
