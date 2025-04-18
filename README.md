@@ -6,7 +6,7 @@ cd ~/ReceiptProcessor
 
 2. Pull the codes
 
-git init
+cd Receipt-Processor 
 
 git clone https://github.com/yanghybrid/Receipt-Processor.git
 
